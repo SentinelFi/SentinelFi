@@ -1,1 +1,1 @@
-# SentinelFi
+# Technincal Details for Sentinel Protocol
