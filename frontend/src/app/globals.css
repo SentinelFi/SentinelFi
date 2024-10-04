@@ -25,3 +25,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@-webkit-keyframes pulse-fade {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.animate-pulse-fade {
+  animation: pulse-fade 5s ease-in-out infinite;
+}
