@@ -14,10 +14,31 @@
   }
 } */
 
+@font-face {
+  font-family: 'Titillium_Web';
+  src: url('./fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium_Web';
+  src: url('./fonts/Titillium_Web/TitilliumWeb-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium_Web';
+  src: url('./fonts/Titillium_Web/TitilliumWeb-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Titillium_Web', Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -27,8 +48,8 @@ body {
 }
 
 @-webkit-keyframes pulse-fade {
-  0%, 100% { opacity: 0; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.1); }
+  0%, 100% { opacity: 0; transform: scale(0.7); }
+  50% { opacity: 1; transform: scale(1); }
 }
 .animate-pulse-fade {
   animation: pulse-fade 5s ease-in-out infinite;
