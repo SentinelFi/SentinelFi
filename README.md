@@ -73,7 +73,6 @@ Note: While we have a general plan on how to proceed for Build Phase and later, 
 We are requesting **$15,000** to cover six weeks of full-time development for two developers. This funding will allow us to complete the essential deliverables necessary to get Sentinel off the ground, including smart contract development, oracle integration, and building a user-facing DApp using NextJs.
 
 #### Deliverables:
-
 - **Deliverable 1: Vault Contracts - Risk and Hedge Vaults**
   - Develop and deploy vault contracts on the testnet for both Risk and Hedge Vaults. These vaults will:
     - Accept user deposits and mint LP tokens to track users’ shares in the vault.
@@ -120,40 +119,33 @@ We are requesting **$15,000** to cover six weeks of full-time development for tw
 This budget will allow both developers to focus full-time on completing the key deliverables, ensuring the MVP is ready within the six-week timeline. Kickstarting the project.
 
 ### Build Phase (6 Months)
-
 **Objective:** Scale the MVP into a dynamic, self-sustaining platform.
-
 - **Vault Factory Contract:** Develop and deploy the **Vault Factory** contract to dynamically create new insurance policies based on different flight routes, allowing the platform to scale.
 - **Yield and Pricing Analysis:** Analyze historical flight data to assess yield probabilities for risk investors and set fair, sustainable pricing for the insurance contracts. This ensures a profitable and scalable market.
 - **Sustainability Beyond SCF:** Focus on offering competitive yields to attract capital from risk investors, ensuring the platform can operate independently of grants.
 
 ### Growth Phase
-
 **Objective:** Expand Sentinel into a multi-use decentralized insurance platform.
-
 - **Expansion to Other Risk/Hedge Markets:** Beyond flight delay insurance, expand into additional markets such as:
   - **Stablecoin De-pegging Insurance:** Inspired by the success of Y2K Finance, offer insurance against stablecoin de-pegging, a validated use case in DeFi.
   - **Weather-Based Insurance:** Expand into weather-related insurance products (e.g., rainfall insurance for agriculture) as long as reliable oracles are available.
 - **Framework Flexibility:** Ensure Sentinel remains flexible enough to support a variety of hedge/risk markets and adapt to new opportunities.
 
-### Go-To-Market Strategy
-
+### Go-To-Market Strategy:
 #### Target Audiences:
 - **Travelers:** We will market Sentinel as a hassle-free insurance solution that provides automatic payouts for flight delays, appealing to frequent flyers.
 - **DeFi Risk Investors:** Position Sentinel as a **Real-World Asset (RWA)** project to attract DeFi-native investors seeking stable, real-world yields.
-
 #### Growth Tactics:
 - **Partnerships with Airlines and Travel Platforms:** Partner with travel booking platforms and airlines to offer Sentinel insurance at the point of sale.
 - **Community and Developer Outreach:** Engage the Stellar and Soroban communities through social media, hackathons, and developer initiatives.
 - **Incentives for Early Users:** Offer incentives such as reduced fees or bonus yields for early users and risk investors to boost adoption.
 
-### Funding Strategy Beyond SCF
-
-While SCF awards are an excellent starting point, they are not intended for long-term funding. Our goal is to create a self-sustaining model for Sentinel, but we are also actively pursuing additional funding sources:
+### Funding Strategy Beyond SCF:
+While SCF awards are an excellent starting point, we understand that they are not intended for long-term funding. Our goal is to create a self-sustaining model for Sentinel, but we are also actively pursuing additional funding sources:
 
 - **Revenue from Premiums:** Generate revenue by taking a small percentage of premiums paid by insurance buyers once Sentinel is live, creating a steady income stream to support platform operations.
 - **Yield for Risk Investors:** Offer real-world yield opportunities for risk investors, attracting capital from those seeking stable returns outside of volatile crypto markets, helping maintain liquidity.
-- **Incubator Programs:**
+- **Incubator Programs:** We plan on applying to atleast two incubator programs to secure additional funding and mentorship.
   - **Draper University:** Apply to Draper University’s incubator for capital and valuable mentorship.
   - **a16z Crypto School:** Join a16zcrypto’s program to gain deeper insights into scaling crypto projects and potentially secure additional funding.
 - **Hiring for Growth:** With additional funding, hire key roles such as **Business Development** and **Growth Specialists** to expand Sentinel’s market presence and accelerate user acquisition.
