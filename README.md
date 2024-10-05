@@ -1,8 +1,9 @@
 ## Table of Contents
-- [Detailed Overview, Problems Being Solved, and Solutions, How Soroban is Used:](#detailed-overview)
+- [Detailed Overview, Problems Being Solved, and Solutions, How Soroban is Used](#detailed-overview)
 - [Technical Architecture](#technical-architecture)
-- [Traction:](#traction)
-- [Roadmap And Deliverables, Time and Budget Estimates](#roadmap)
+- [Traction](#traction)
+- [Design, Figma Mockups](#design)
+- [Roadmap And Deliverables, Time and Budget Estimates, Funding Strategy Beyond SCF](#roadmap)
 - [Success Measurement](#success-measurement)
 
 ---
@@ -201,6 +202,24 @@ We plan to integrate with the **FlightAware API** to access flight delay data, w
 During the kickstart week, we conducted extensive user interviews to validate the concept. We spoke with over 10 people, both travelers and investors. Travelers shared their frustration with traditional insurance processes, noting how time-consuming it is to get payouts, despite flight data being readily available. They appreciated our approach of an automatic payout system, which would encourage them to buy insurance more frequently, knowing the process is hassle-free.
 
 On the investor side, we received positive feedback, particularly from people familiar with DeFi and prediction markets. They were excited about having a "real yield" opportunity that ties returns to tangible, real-world events like flight delays. This feedback confirms the potential traction for Sentinel among both consumer and investor segments, providing strong validation for the project as a real-world asset (RWA) solution.
+--- 
+## Design
+
+Here's our Figma mockup: 
+
+![alt text](images/01.png)
+![alt text](images/02.png)
+![alt text](images/03.png)
+![alt text](images/04.png)
+![alt text](images/05.png)
+![alt text](images/06.png)
+![alt text](images/07.png)
+![alt text](images/08.png)
+![alt text](images/09.png)
+![alt text](images/10.png)
+![alt text](images/11.png)
+![alt text](images/12.png)
+![alt text](images/13.png)
 
 ---
 ## Roadmap:
