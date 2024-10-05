@@ -233,7 +233,7 @@ Here's our Figma mockup:
 
 Our roadmap is divided into three phases: the **Kickstart Phase**, the **Build Phase**, and the **Growth Phase**. Each phase is designed to achieve necessary milestones, culminating in a fully operational decentralized insurance platform.
 
-Note: While we have a general plan on how to proceed for Build Phase and later, we only have detailed plan (deliverables) for the 6 weeks of Kickstart Phase
+Note: While we have a general plan on how to proceed for Build Phase and later, we only have detailed plan (deliverables) for the 6 weeks of Kickstart Phase.
 
 ### Kickstart Phase (6 Weeks)
 **Objective:** Establish the foundational components needed for the MVP and demonstrate the viability of Sentinel as a decentralized insurance platform.
