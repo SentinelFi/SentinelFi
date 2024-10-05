@@ -156,15 +156,15 @@ sequenceDiagram
     participant Liquidator
 
     Hedge Buyer ->> Hedge Vault: 1. Deposit in Hedge Vault
-    Hedge Vault -->> Hedge Buyer: 2. Get Hedge Shares
+    Hedge Vault ->> Hedge Buyer: 2. Get Hedge Shares
     Risk Buyer ->> Risk Vault: 3. Deposit in Risk Vault
-    Risk Vault -->> Risk Buyer: 4. Get Risk Shares
+    Risk Vault ->> Risk Buyer: 4. Get Risk Shares
     
-    Liquidator ->> Controller Contract: 5. Trigger Liquidate if conditions met
+    Liquidator -->> Controller Contract: 5. Trigger Liquidate if conditions met
     
-    Controller Contract -->> Hedge Vault: 6. Risk Collateral transferred to Hedge
-    Controller Contract -->> Risk Vault: 7. Trigger Mature if Epoch ends w/o liquidation
-    Risk Vault -->> Controller Contract: 8. Hedge Collateral transferred to Risk
+    Risk Vault -->> Hedge Vault: 6. Risk Collateral transferred to Hedge
+    Liquidator -->> Controller Contract: 7. Trigger Mature if Epoch ends w/o liquidation
+    Hedge Vault -->> Risk Vault: 8. Hedge Collateral transferred to Risk
 
     Hedge Buyer ->> Hedge Vault: 9. Hedge Buyers Withdraw Funds
     Risk Buyer ->> Risk Vault: 10. Risk Buyers Withdraw Funds
@@ -177,7 +177,7 @@ sequenceDiagram
 5. **Liquidation** is triggered if conditions are met, typically by a **Liquidator** monitoring external conditions (e.g., flight delays).
    - If liquidation occurs: 
      - **Risk collateral** is transferred to the **Hedge Vault**.
-6. If no liquidation occurs and the **epoch ends**, the contract triggers a **maturity event**.
+6. If no liquidation occurs and the **epoch ends**, the liquidator triggers a **maturity event**.
    - If maturity is triggered:
      - **Hedge collateral** is transferred to the **Risk Vault**.
 7. **Hedge Buyers** withdraw their funds from the **Hedge Vault**.
