@@ -17,7 +17,6 @@
 
 ## Detailed Overview: 
 
-
 ### Introduction:
 
 Sentinel Protocol is a decentralized insurance solution built on the Soroban blockchain. It is designed to provide trustless, automated insurance to users seeking to hedge against risks or investors interested in assuming those risks. It connects these two parties in a transparent, secure, and automated manner using smart contracts and decentralized oracles. The protocol currently focuses on flight delay insurance as its Proof of Concept.
@@ -53,13 +52,15 @@ Flight Delay Insurance allows users to hedge against flight delays by purchasing
 - **Oracle Integration:** Acurast Oracle provides real-time trust minimized flight delay data, ensuring trustworthy, real-world data for smart contract execution.
 - **Stellar Integration:** The [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) enables seamless interaction between the Liquidator Bot, Oracle, and the Soroban contracts, facilitating efficient data flow between off-chain and on-chain components.
 
+---
 ## Technical Architecture
-
+---
 ## Traction:
 During the kickstart week, we conducted extensive user interviews to validate the concept. We spoke with over 10 people, both travelers and investors. Travelers shared their frustration with traditional insurance processes, noting how time-consuming it is to get payouts, despite flight data being readily available. They appreciated our approach of an automatic payout system, which would encourage them to buy insurance more frequently, knowing the process is hassle-free.
 
-On the investor side, we received positive feedback, particularly from people familiar with DeFi and prediction markets. They were excited about having a real yield opportunity that ties returns to tangible, real-world events like flight delays. This feedback confirms the potential traction for Sentinel among both consumer and investor segments, providing strong validation for the project as a real-world asset (RWA) solution.
+On the investor side, we received positive feedback, particularly from people familiar with DeFi and prediction markets. They were excited about having a "real yield" opportunity that ties returns to tangible, real-world events like flight delays. This feedback confirms the potential traction for Sentinel among both consumer and investor segments, providing strong validation for the project as a real-world asset (RWA) solution.
 
+---
 ## Roadmap:
 
 Our roadmap is divided into three phases: the **Kickstart Phase**, the **Build Phase**, and the **Growth Phase**. Each phase is designed to achieve necessary milestones, culminating in a fully operational decentralized insurance platform.
@@ -72,6 +73,7 @@ Note: While we have a general plan on how to proceed for Build Phase and later, 
 We are requesting **$15,000** to cover six weeks of full-time development for two developers. This funding will allow us to complete the essential deliverables necessary to get Sentinel off the ground, including smart contract development, oracle integration, and building a user-facing DApp using NextJs.
 
 #### Deliverables:
+
 - **Deliverable 1: Vault Contracts - Risk and Hedge Vaults**
   - Develop and deploy vault contracts on the testnet for both Risk and Hedge Vaults. These vaults will:
     - Accept user deposits and mint LP tokens to track users’ shares in the vault.
@@ -86,11 +88,12 @@ We are requesting **$15,000** to cover six weeks of full-time development for tw
     - Liquidate the Hedge Vault at the end of the insurance period if no liquidation event occurs.
 
 - **Deliverable 3: DApp Frontend**
-  - A frontend built using **Next.js**, **ShadCN**, and **Tailwind CSS** will allow users to interact with Sentinel. The DApp will enable users to:
+  - A frontend built using **Next.js**, **ShadCN**, and **Tailwind CSS** will allow users to interact with Sentinel. The DApp will provide an easy UI to:
     - Buy insurance for a flight and hedge against delays.
     - Invest in the Risk Vault to earn yield by taking on flight delay risks.
     - Withdraw funds from both the Risk and Hedge Vaults.
-    - Monitor the current state of the insurance protocol and view investment status.
+    - Display the current state of the insurance protocol and historic APY.
+    - Track user specific investment status in user dashboards.
 
 - **Deliverable 4: Liquidator Bot**
   - The **Liquidator Bot** will be a Node.js script deployed on **AWS Lambda** that:
@@ -114,32 +117,26 @@ We are requesting **$15,000** to cover six weeks of full-time development for tw
   - Set up end-to-end testing to ensure seamless functionality.
   - Create the Liquidator Bot to automate liquidation events.
 
-This budget will allow both developers to focus full-time on completing the key deliverables, ensuring the MVP is ready within the six-week timeline.
-
----
+This budget will allow both developers to focus full-time on completing the key deliverables, ensuring the MVP is ready within the six-week timeline. Kickstarting the project.
 
 ### Build Phase (6 Months)
+
 **Objective:** Scale the MVP into a dynamic, self-sustaining platform.
 
-#### Milestones:
 - **Vault Factory Contract:** Develop and deploy the **Vault Factory** contract to dynamically create new insurance policies based on different flight routes, allowing the platform to scale.
 - **Yield and Pricing Analysis:** Analyze historical flight data to assess yield probabilities for risk investors and set fair, sustainable pricing for the insurance contracts. This ensures a profitable and scalable market.
 - **Sustainability Beyond SCF:** Focus on offering competitive yields to attract capital from risk investors, ensuring the platform can operate independently of grants.
 
----
-
 ### Growth Phase
+
 **Objective:** Expand Sentinel into a multi-use decentralized insurance platform.
 
-#### Milestones:
 - **Expansion to Other Risk/Hedge Markets:** Beyond flight delay insurance, expand into additional markets such as:
   - **Stablecoin De-pegging Insurance:** Inspired by the success of Y2K Finance, offer insurance against stablecoin de-pegging, a validated use case in DeFi.
   - **Weather-Based Insurance:** Expand into weather-related insurance products (e.g., rainfall insurance for agriculture) as long as reliable oracles are available.
 - **Framework Flexibility:** Ensure Sentinel remains flexible enough to support a variety of hedge/risk markets and adapt to new opportunities.
 
----
-
-## Go-To-Market Strategy
+### Go-To-Market Strategy
 
 #### Target Audiences:
 - **Travelers:** We will market Sentinel as a hassle-free insurance solution that provides automatic payouts for flight delays, appealing to frequent flyers.
@@ -150,9 +147,7 @@ This budget will allow both developers to focus full-time on completing the key 
 - **Community and Developer Outreach:** Engage the Stellar and Soroban communities through social media, hackathons, and developer initiatives.
 - **Incentives for Early Users:** Offer incentives such as reduced fees or bonus yields for early users and risk investors to boost adoption.
 
----
-
-## Funding Strategy Beyond SCF
+### Funding Strategy Beyond SCF
 
 While SCF awards are an excellent starting point, they are not intended for long-term funding. Our goal is to create a self-sustaining model for Sentinel, but we are also actively pursuing additional funding sources:
 
@@ -166,9 +161,11 @@ While SCF awards are an excellent starting point, they are not intended for long
 
 By combining revenue from premiums, strategic funding, and targeted growth initiatives, Sentinel will be well-positioned for long-term success and scalability.
 
+---
+
 ## Success Measurement 
 
-### Kickstart Phase:
+### Kickstart Phase KPIs:
 
 In this phase, our primary metric for success is operational functionality. Specifically, we will focus on:
 
@@ -183,5 +180,3 @@ Once we have our MVP, success will be measured by more tangible metrics:
 - **Total Value Locked (TVL) in Risk Vaults:** TVL will be a key performance indicator, as it reflects how much capital risk investors are willing to lock into our platform. This shows investor confidence in our insurance model.
 - **Number of Customers Served:** Another important metric is the number of users who purchase flight delay insurance through Sentinel. This will help us understand the platform's adoption and user interest.
 - **Controlled Mainnet Launch:** In the initial stages, we will limit our offerings to specific flight routes to ensure we can effectively handle demand while maintaining reliability. Success here will be determined by our ability to manage these routes while keeping operations secure and seamless.
-
-Our long-term goal is to scale responsibly, so while we won’t be covering all flights globally in the Build Phase, success will hinge on how well we can manage this gradual rollout and establish a track record of user satisfaction and vault performance.
