@@ -40,7 +40,7 @@ Flight Delay Insurance allows users to hedge against flight delays by purchasing
 
 ### How Sentinel Uses Soroban:
 - **Soroban Smart Contracts:** Soroban’s decentralized infrastructure powers Sentinel’s vaults, automating the insurance purchase, claims, and payout processes without the need for third parties.
-- **Oracle Integration:** Acurast Oracle provides real-time trust minimized flight delay data, ensuring trustworthy, real-world data for smart contract execution.
+- **Oracle Integration:** [Acurast Oracle](https://docs.acurast.com/) provides real-time trust minimized flight delay data, ensuring trustworthy, real-world data for smart contract execution.
 - **Stellar Integration:** The [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) enables seamless interaction between the Liquidator Bot, Oracle, and the Soroban contracts, facilitating efficient data flow between off-chain and on-chain components.
 
 ---
@@ -57,7 +57,7 @@ The Sentinel protocol consists of four key actors and three main components that
 ***Main Components:***
 - **Sentinel Smart Contracts:** Immutable contracts deployed on the Soroban blockchain.
 - **Frontend:** A web-based, user-friendly interface that exposes the public functions of the smart contracts.
-- **Oracle:** A Node.js script deployed on Acurast Processors to provide external data.
+- **Oracle:** A Node.js script deployed on [Acurast Processors](https://docs.acurast.com/acurast-processors) to provide external data.
 
 ***Smart Contracts:***
 Sentinel is powered by four immutable contracts that work together to facilitate the Hedge/Risk marketplace (insurance protocol):
@@ -84,7 +84,7 @@ In the Sentinel protocol:
 
 For our use case, hedge and risk participants bet on whether a flight will be delayed by more than N hours by depositing capital into the Hedge or Risk Vaults. 
 
-The smart contract tracks flight information using an **Oracle**, which is a Node.js script deployed on an **Acurast TEE Processor**. The Oracle retrieves data from the [FlightAware API](https://www.flightaware.com/commercial/aeroapi/) and forwards it to our smart contracts using [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk).
+The smart contract tracks flight information using an **Oracle**, which is a Node.js script deployed on an [**Acurast TEE Processor**](https://docs.acurast.com/acurast-protocol/architecture/execution-layer). The Oracle retrieves data from the [FlightAware API](https://www.flightaware.com/commercial/aeroapi/) and forwards it to our smart contracts using [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk).
 
 Based on the flight data, the controller smart contract determines whether the Risk Vault can be liquidated. If conditions are met (e.g., the flight is delayed), capital is transferred from the Risk Vault to the Hedge Vault. If no liquidation occurs by maturity, the capital from the Hedge Vault is transferred to the Risk Vault. **Decentralized liquidator bots** monitor the flight status and trigger liquidations.
 
@@ -129,7 +129,7 @@ In our implementation, we deploy a Node.js script, which includes a bundled js-s
 
 To further secure the process, when deploying the Node.js script on the Acurast network, we can assign multiple processors, ensuring redundancy and reducing the risk of adversarial behavior. Additionally, processors are selected randomly, which lowers the chance of manipulation by adversarial nodes.
 
-The script is also executed within Acurast’s Secure Hardware Runtime (ACHR), ensuring that the script is run in a confidential environment where the processor itself has no visibility into the script's content. This enhances privacy and security. For more details on Acurast’s trust-minimized execution layer, further information can be found here.
+The script is also executed within Acurast’s Secure Hardware Runtime (ACHR), ensuring that the script is run in a confidential environment where the processor itself has no visibility into the script's content. This enhances privacy and security. For more details on Acurast’s trust-minimized execution layer, further information can be found [here](https://docs.acurast.com/acurast-protocol/architecture/execution-layer/).
 
 In conclusion, using Acurast allows us to forward flight delay data from external APIs to Soroban without introducing significant trust overhead, making it an efficient and secure oracle solution.
 
