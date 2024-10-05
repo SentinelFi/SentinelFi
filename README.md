@@ -338,8 +338,10 @@ Once we have our MVP and can launch in mainnet, success will be measured by more
 
 ### Team Bio
 
+### Team Bio
+
 - **Saurav Dhar (Ender):**  
-  With 9 years of experience in software development, Saurav has a strong background in both Web2 and Web3 technologies.  
+  Saurav has 8 years of experience in Web2 and over 1 year in Web3 development.  
   - **Web2 Expertise:** Ruby on Rails, Python, TypeScript, React, Rust.  
   - **Web3 Expertise:** Solidity, Move, and Applied ZK (Zero-Knowledge).  
   Saurav has been pivotal in bridging traditional development skills with cutting-edge decentralized technologies, bringing valuable insights from both ecosystems to the Sentinel project.  
