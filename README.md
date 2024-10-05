@@ -1,3 +1,7 @@
+Presentation #1: https://docs.google.com/presentation/d/e/2PACX-1vSE0k_A4WWKGaDisPuBnpW3LZN3p9SAaYplWODlq7aBByfH7obyytVBYVqsFMrHdOnZ-njX56YTo5Gt/pub
+
+Presentation #2: https://docs.google.com/presentation/d/e/2PACX-1vTDbMYiE8QylmcV9U23a__U5_aZJRbHFd616wsNVon37VVHjJb974_YBDHsRBOnPXqyk5aJbFpbtzNc/pub
+
 ## Table of Contents
 - [Detailed Overview, Problems Being Solved, and Solutions, How Soroban is Used](#detailed-overview)
 - [Technical Architecture](#technical-architecture)
