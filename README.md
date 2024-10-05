@@ -335,3 +335,15 @@ Once we have our MVP and can launch in mainnet, success will be measured by more
 - **Total Value Locked (TVL) in Risk Vaults:** TVL will be a key performance indicator, as it reflects how much capital risk investors are willing to lock into our platform. This shows investor confidence in our insurance model.
 - **Number of Customers Served:** Another important metric is the number of users who purchase flight delay insurance through Sentinel. This will help us understand the platform's adoption and user interest.
 - **Controlled Mainnet Launch:** In the initial stages, we will limit our offerings to specific flight routes to ensure we can effectively handle demand while maintaining reliability. Success here will be determined by our ability to manage these routes while keeping operations secure and seamless.
+
+### Team Bio
+
+- **Saurav Dhar (Ender):**  
+  With 9 years of experience in software development, Saurav has a strong background in both Web2 and Web3 technologies.  
+  - **Web2 Expertise:** Ruby on Rails, Python, TypeScript, React, Rust.  
+  - **Web3 Expertise:** Solidity, Move, and Applied ZK (Zero-Knowledge).  
+  Saurav has been pivotal in bridging traditional development skills with cutting-edge decentralized technologies, bringing valuable insights from both ecosystems to the Sentinel project.  
+  - **LinkedIn:** [Saurav Dhar](https://www.linkedin.com/in/sdhar86/)
+
+- **John (jsmaxi):**  
+  John has extensive experience in both **Java** and **React**, making him an expert in building scalable front-end and back-end systems. His years of experience bring valuable knowledge to the development of high-quality, user-facing applications in the Sentinel project.
