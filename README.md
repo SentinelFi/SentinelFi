@@ -185,6 +185,27 @@ sequenceDiagram
 
 This process ensures a trustless and automated mechanism for managing the flow of funds between the Hedge and Risk Vaults, depending on whether the conditions for liquidation or maturity are met.
 
+### Technology Stack
+
+#### Smart Contract
+We do not use a traditional backend. Instead, our core system runs on **smart contracts** written in **Rust** and deployed on the **Soroban smart contract platform**, ensuring a decentralized and trustless environment.
+
+#### Liquidator Backend
+While there is no backend for the main system, our **liquidator bot** will be a **Node.js** script deployed on **AWS Lambda** (a serverless platform). This enables efficient off-chain monitoring and liquidation triggering.
+
+#### Frontend
+The frontend allows users to interact with the Soroban smart contracts. It is built using **Next.js**, **ShadCN**, and **Tailwind CSS**, and integrates with **stellar-js-sdk** and **freighter-api** to facilitate seamless user interactions with the protocol.
+
+### Oracle
+The Oracle will be a **Node.js** script, bundled with **stellar-js-sdk**, and deployed on the **Acurast decentralized cloud**. This script runs inside a **Trusted Execution Environment (TEE)** to minimize trust overhead and provide secure, verified data to the smart contracts.
+
+#### Automated Testing
+We plan to test our smart contracts in both **ephemeral** and **persistent** modes (using **Docker**) as needed. These tests will follow the guidelines laid out in the Soroban quickstart guide to ensure reliability and correctness.
+
+#### Integrations
+We plan to integrate with the **FlightAware API** to access flight delay data, which is a convenient wrapper around FAA data. This will serve as the primary source of external data for our smart contracts.
+
+
 ---
 ## Traction:
 During the kickstart week, we conducted extensive user interviews to validate the concept. We spoke with over 10 people, both travelers and investors. Travelers shared their frustration with traditional insurance processes, noting how time-consuming it is to get payouts, despite flight data being readily available. They appreciated our approach of an automatic payout system, which would encourage them to buy insurance more frequently, knowing the process is hassle-free.
