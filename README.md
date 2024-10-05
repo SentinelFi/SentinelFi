@@ -161,8 +161,8 @@ sequenceDiagram
     Liquidator -->> Controller Contract: 7. Trigger Mature if Epoch ends w/o liquidation
     Hedge Vault -->> Risk Vault: 8. Hedge Collateral transferred to Risk
 
-    Hedge Buyer <<- Hedge Vault: 9. Hedge Buyers Withdraw Funds
-    Risk Buyer <<- Risk Vault: 10. Risk Buyers Withdraw Funds
+    Hedge Vault ->> Hedge Buyer: 9. Hedge Buyers Withdraw Funds
+    Risk Vault ->> Risk Buyer: 10. Risk Buyers Withdraw Funds
 ```
 
 1. **Hedge Buyer** deposits in **Hedge Vault**.
