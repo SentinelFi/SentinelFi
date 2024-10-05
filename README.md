@@ -1,19 +1,9 @@
 ## Table of Contents
-- [Detailed Overview:](#detailed-overview)
-  * [Introduction:](#introduction-)
-  * [Problem it Solves:](#problem-it-solves)
-  * [How it Solves These Problems:](#how-it-solves-these-problems)
-  * [Audience:](#audience-)
-  * [How It Works:](#how-it-works)
-  * [How Sentinel Uses Soroban and Stellar:](#how-sentinel-uses-soroban-and-stellar)
+- [Detailed Overview, Problems Being Solved, and Solutions, How Soroban is Used:](#detailed-overview)
 - [Technical Architecture](#technical-architecture)
 - [Traction:](#traction)
-- [Roadmap:](#roadmap-)
-  * [Kickstart Phase (6 Weeks)](#kickstart-phase--6-weeks)
-    + [Deliverables:](#deliverables)
+- [Roadmap And Deliverables, Time and Budget Estimates](#roadmap)
 - [Success Measurement](#success-measurement)
-  * [Kickstart Phase:](#kickstart-phase)
-  * [Build Phase and Beyond:](#build-phase-and-beyond)
 
 ---
 ## Detailed Overview: 
