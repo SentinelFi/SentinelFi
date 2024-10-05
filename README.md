@@ -196,12 +196,14 @@ We plan to test our smart contracts in both **ephemeral** and **persistent** mod
 #### Integrations
 We plan to integrate with the **FlightAware API** to access flight delay data, which is a convenient wrapper around FAA data. This will serve as the primary source of external data for our smart contracts.
 
-
 ---
+
 ## Traction:
+
 During the kickstart week, we conducted extensive user interviews to validate the concept. We spoke with over 10 people, both travelers and investors. Travelers shared their frustration with traditional insurance processes, noting how time-consuming it is to get payouts, despite flight data being readily available. They appreciated our approach of an automatic payout system, which would encourage them to buy insurance more frequently, knowing the process is hassle-free.
 
 On the investor side, we received positive feedback, particularly from people familiar with DeFi and prediction markets. They were excited about having a "real yield" opportunity that ties returns to tangible, real-world events like flight delays. This feedback confirms the potential traction for Sentinel among both consumer and investor segments, providing strong validation for the project as a real-world asset (RWA) solution.
+
 --- 
 ## Design
 
