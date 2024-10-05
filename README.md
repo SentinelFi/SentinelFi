@@ -67,7 +67,9 @@ Our roadmap is divided into three phases: the **Kickstart Phase**, the **Build P
 ### Kickstart Phase (6 Weeks)
 **Objective:** Establish the foundational components needed for the MVP and demonstrate the viability of Sentinel as a decentralized insurance platform.
 
-We are requesting **$15,000** to cover six weeks of full-time development for two developers. This funding will allow us to complete the essential deliverables necessary to get Sentinel off the ground, including smart contract development, oracle integration, and building a user-facing DApp.
+We are requesting **$15,000** to cover six weeks of full-time development for two developers. This funding will allow us to complete the essential deliverables necessary to get Sentinel off the ground, including smart contract development, oracle integration, and building a user-facing DApp using NextJs.
+
+Note: While we have a general plan on how to proceed for Build Phase and later, we only have detailed plan (deliverables) for the 6 weeks of Kickstart Phase
 
 #### Deliverables:
 - **Deliverable 1: Vault Contracts - Risk and Hedge Vaults**
@@ -90,15 +92,15 @@ We are requesting **$15,000** to cover six weeks of full-time development for tw
     - Withdraw funds from both the Risk and Hedge Vaults.
     - Monitor the current state of the insurance protocol and view investment status.
 
-- **Deliverable 4: Liquidator Bot (Stretch Goal)**
+- **Deliverable 4: Liquidator Bot**
   - The **Liquidator Bot** will be a Node.js script deployed on **AWS Lambda** that:
     - Periodically queries the Flight API to check for delays.
     - Triggers the liquidation of the Risk Vault if the delay conditions are met.
     - If no delay occurs, it will trigger the liquidation of the Hedge Vault at the end of the insurance period.
 
-- **Deliverable 5: Acurast Oracles (Stretch Goal)**
-  - We plan to integrate **Acurast Oracles** to pull real-time flight data from the **FlightAware API** and forward it to the Soroban contracts. The Oracle will:
-    - Use **js-stellar-sdk** to send flight data to the
+- **Deliverable 5: Acurast Oracles**
+  - We plan to integrate **Acurast Oracles** to pull real-time flight data from the [FlightAware API](https://www.flightaware.com/commercial/aeroapi/) and forward it to the Soroban contracts. The Oracle will:
+    - Use [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) to send flight data to the
 
 ## Success Measurement 
 
