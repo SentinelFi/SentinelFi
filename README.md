@@ -338,8 +338,6 @@ Once we have our MVP and can launch in mainnet, success will be measured by more
 
 ### Team Bio
 
-### Team Bio
-
 - **Saurav Dhar (Ender):**  
   Saurav has 8 years of experience in Web2 and over 1 year in Web3 development.  
   - **Web2 Expertise:** Ruby on Rails, Python, TypeScript, React, Rust.  
@@ -347,5 +345,8 @@ Once we have our MVP and can launch in mainnet, success will be measured by more
   Saurav has been pivotal in bridging traditional development skills with cutting-edge decentralized technologies, bringing valuable insights from both ecosystems to the Sentinel project.  
   - **LinkedIn:** [Saurav Dhar](https://www.linkedin.com/in/sdhar86/)
 
-- **John (jsmaxi):**  
-  John has extensive experience in both **Java** and **React**, making him an expert in building scalable front-end and back-end systems. His years of experience bring valuable knowledge to the development of high-quality, user-facing applications in the Sentinel project.
+- **John (JsMaxi):**  
+  John has extensive experience in **React**, **.NET**, and **Solidity**, making him highly proficient in building scalable front-end applications and integrating Web2 and Web3 solutions. In his Web2 career, he worked at a large Scandinavian bank, crafting enterprise finance solutions for customers. His Web3 experience includes, but is not limited to, building DApps, NFT projects, and crafting DeFi protocols. His years of experience bring valuable knowledge to the development of high-quality, user-facing applications in the Sentinel project.
+  - **LinkedIn:** [John](https://www.linkedin.com/in/j-s-4b489a32b/)
+
+---
