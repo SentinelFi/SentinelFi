@@ -50,26 +50,26 @@ Flight Delay Insurance allows users to hedge against flight delays by purchasing
 
 ### How Sentinel Uses Soroban and Stellar:
 - **Soroban Smart Contracts:** Soroban’s decentralized infrastructure powers Sentinel’s vaults, automating the insurance purchase, claims, and payout processes without the need for third parties.
-- **Oracle Integration:** Acurast Oracle provides real-time flight delay data using a secure TEE, ensuring trustworthy, real-world data for smart contract execution.
+- **Oracle Integration:** Acurast Oracle provides real-time flight delay data using a secure Trusted Execution Environment(TEE), ensuring trustworthy, real-world data for smart contract execution.
 - **Stellar Integration:** The [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) enables seamless interaction between the Liquidator Bot, Oracle, and the Soroban contracts, facilitating efficient data flow between off-chain and on-chain components.
 
 ## Technical Architecture
 
 ## Traction:
-We conducted extensive user interviews to validate Sentinel's concept, speaking with over 10 people, including both travelers and investors. Travelers expressed frustration with traditional insurance processes, citing how time-consuming it is to receive payouts, even though flight data is readily accessible. They found Sentinel’s automatic payout system appealing, as it eliminates the need for manual claims and makes insurance more attractive and convenient.
+During the kickstart week, we conducted extensive user interviews to validate the concept. We spoke with over 10 people, both travelers and investors. Travelers shared their frustration with traditional insurance processes, noting how time-consuming it is to get payouts, despite flight data being readily available. They appreciated our approach of an automatic payout system, which would encourage them to buy insurance more frequently, knowing the process is hassle-free.
 
-On the investor side, particularly among those familiar with DeFi and prediction markets, there was strong enthusiasm for Sentinel's real yield opportunity. Investors appreciated that returns would be tied to tangible, real-world events like flight delays. This feedback confirms significant traction potential for Sentinel among both consumers and investors, further validating its value as a real-world asset (RWA) solution.
+On the investor side, we received positive feedback, particularly from people familiar with DeFi and prediction markets. They were excited about having a real yield opportunity that ties returns to tangible, real-world events like flight delays. This feedback confirms the potential traction for Sentinel among both consumer and investor segments, providing strong validation for the project as a real-world asset (RWA) solution.
 
 ## Roadmap:
 
 Our roadmap is divided into three phases: the **Kickstart Phase**, the **Build Phase**, and the **Growth Phase**. Each phase is designed to achieve necessary milestones, culminating in a fully operational decentralized insurance platform.
 
+Note: While we have a general plan on how to proceed for Build Phase and later, we only have detailed plan (deliverables) for the 6 weeks of Kickstart Phase
+
 ### Kickstart Phase (6 Weeks)
 **Objective:** Establish the foundational components needed for the MVP and demonstrate the viability of Sentinel as a decentralized insurance platform.
 
 We are requesting **$15,000** to cover six weeks of full-time development for two developers. This funding will allow us to complete the essential deliverables necessary to get Sentinel off the ground, including smart contract development, oracle integration, and building a user-facing DApp using NextJs.
-
-Note: While we have a general plan on how to proceed for Build Phase and later, we only have detailed plan (deliverables) for the 6 weeks of Kickstart Phase
 
 #### Deliverables:
 - **Deliverable 1: Vault Contracts - Risk and Hedge Vaults**
@@ -98,9 +98,73 @@ Note: While we have a general plan on how to proceed for Build Phase and later, 
     - Triggers the liquidation of the Risk Vault if the delay conditions are met.
     - If no delay occurs, it will trigger the liquidation of the Hedge Vault at the end of the insurance period.
 
-- **Deliverable 5: Acurast Oracles**
-  - We plan to integrate **Acurast Oracles** to pull real-time flight data from the [FlightAware API](https://www.flightaware.com/commercial/aeroapi/) and forward it to the Soroban contracts. The Oracle will:
-    - Use [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) to send flight data to the
+- **Deliverable 5: Acurast Oracles (Stretch Goal)**
+  - We plan to integrate **Acurast Oracles** to pull real-time flight data from the **FlightAware API** and forward it to the Soroban contracts. The Oracle will:
+    - Use **js-stellar-sdk** to send flight data to the Controller Contract.
+    - Act as a cron job to forward data at regular intervals, ensuring automated, trusted execution.
+
+#### Developer Responsibilities:
+- **Developer 1:**
+  - Build the Vault Contracts (Risk and Hedge).
+  - Develop the Controller Contract.
+  - Integrate Acurast Oracle for reliable flight data.
+  
+- **Developer 2:**
+  - Develop the **Next.js** frontend for user interaction.
+  - Set up end-to-end testing to ensure seamless functionality.
+  - Create the Liquidator Bot to automate liquidation events.
+
+This budget will allow both developers to focus full-time on completing the key deliverables, ensuring the MVP is ready within the six-week timeline.
+
+---
+
+### Build Phase (6 Months)
+**Objective:** Scale the MVP into a dynamic, self-sustaining platform.
+
+#### Milestones:
+- **Vault Factory Contract:** Develop and deploy the **Vault Factory** contract to dynamically create new insurance policies based on different flight routes, allowing the platform to scale.
+- **Yield and Pricing Analysis:** Analyze historical flight data to assess yield probabilities for risk investors and set fair, sustainable pricing for the insurance contracts. This ensures a profitable and scalable market.
+- **Sustainability Beyond SCF:** Focus on offering competitive yields to attract capital from risk investors, ensuring the platform can operate independently of grants.
+
+---
+
+### Growth Phase
+**Objective:** Expand Sentinel into a multi-use decentralized insurance platform.
+
+#### Milestones:
+- **Expansion to Other Risk/Hedge Markets:** Beyond flight delay insurance, expand into additional markets such as:
+  - **Stablecoin De-pegging Insurance:** Inspired by the success of Y2K Finance, offer insurance against stablecoin de-pegging, a validated use case in DeFi.
+  - **Weather-Based Insurance:** Expand into weather-related insurance products (e.g., rainfall insurance for agriculture) as long as reliable oracles are available.
+- **Framework Flexibility:** Ensure Sentinel remains flexible enough to support a variety of hedge/risk markets and adapt to new opportunities.
+
+---
+
+## Go-To-Market Strategy
+
+#### Target Audiences:
+- **Travelers:** We will market Sentinel as a hassle-free insurance solution that provides automatic payouts for flight delays, appealing to frequent flyers.
+- **DeFi Risk Investors:** Position Sentinel as a **Real-World Asset (RWA)** project to attract DeFi-native investors seeking stable, real-world yields.
+
+#### Growth Tactics:
+- **Partnerships with Airlines and Travel Platforms:** Partner with travel booking platforms and airlines to offer Sentinel insurance at the point of sale.
+- **Community and Developer Outreach:** Engage the Stellar and Soroban communities through social media, hackathons, and developer initiatives.
+- **Incentives for Early Users:** Offer incentives such as reduced fees or bonus yields for early users and risk investors to boost adoption.
+
+---
+
+## Funding Strategy Beyond SCF
+
+While SCF awards are an excellent starting point, they are not intended for long-term funding. Our goal is to create a self-sustaining model for Sentinel, but we are also actively pursuing additional funding sources:
+
+- **Revenue from Premiums:** Generate revenue by taking a small percentage of premiums paid by insurance buyers once Sentinel is live, creating a steady income stream to support platform operations.
+- **Yield for Risk Investors:** Offer real-world yield opportunities for risk investors, attracting capital from those seeking stable returns outside of volatile crypto markets, helping maintain liquidity.
+- **Incubator Programs:**
+  - **Draper University:** Apply to Draper University’s incubator for capital and valuable mentorship.
+  - **a16z Crypto School:** Join a16zcrypto’s program to gain deeper insights into scaling crypto projects and potentially secure additional funding.
+- **Hiring for Growth:** With additional funding, hire key roles such as **Business Development** and **Growth Specialists** to expand Sentinel’s market presence and accelerate user acquisition.
+- **Institutional Investors and DAOs:** Onboard institutional investors or DAOs interested in real-world assets (RWAs) for stable yields, ensuring that the project sustains itself beyond grants.
+
+By combining revenue from premiums, strategic funding, and targeted growth initiatives, Sentinel will be well-positioned for long-term success and scalability.
 
 ## Success Measurement 
 
