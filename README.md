@@ -38,7 +38,7 @@ Flight Delay Insurance allows users to hedge against flight delays by purchasing
 
 ### Audience:
 - **Travelers:** Individuals looking to mitigate financial losses due to flight delays.
-- **Risk Investors:** Users interested in providing coverage for these insurance contracts, in exchange for yield.
+- **DEFI Investors:** Users interested in providing coverage for these insurance contracts, in exchange for yield.
 
 ### How It Works:
 - Users (travelers) deposit funds into a Hedge Vault to buy insurance against flight delays.
@@ -48,9 +48,9 @@ Flight Delay Insurance allows users to hedge against flight delays by purchasing
 - If the delay occurs, the Risk Vault pays out to insured travelers; otherwise, Hedge Vault pays out to the investors.
 - Soroban enables smart contract deployments that automate the entire process, from taking user deposits to tracking oracle data, without the need for intermediaries.
 
-### How Sentinel Uses Soroban and Stellar:
+### How Sentinel Uses Soroban:
 - **Soroban Smart Contracts:** Soroban’s decentralized infrastructure powers Sentinel’s vaults, automating the insurance purchase, claims, and payout processes without the need for third parties.
-- **Oracle Integration:** Acurast Oracle provides real-time flight delay data using a secure Trusted Execution Environment(TEE), ensuring trustworthy, real-world data for smart contract execution.
+- **Oracle Integration:** Acurast Oracle provides real-time trust minimized flight delay data, ensuring trustworthy, real-world data for smart contract execution.
 - **Stellar Integration:** The [`js-stellar-sdk`](https://github.com/stellar/js-stellar-sdk) enables seamless interaction between the Liquidator Bot, Oracle, and the Soroban contracts, facilitating efficient data flow between off-chain and on-chain components.
 
 ## Technical Architecture
