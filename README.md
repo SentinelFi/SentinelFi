@@ -123,7 +123,7 @@ We use **Acurast Oracles** to uphold the principles of decentralization and trus
 This high-level diagram illustrates the broader system context of Sentinel Protocol, showing how the system interacts with external entities like customers, systems, and external services. It highlights the flow of data between various components, including the Acurast Oracle, Flight Data API, Soroban-based smart contracts, and the frontend interface, along with the roles of key actors like insurance buyers, risk investors, market makers, and liquidators 
 #### C4 L2 Diagram: Zoomed-In Design for the Smart Contract
 
-![alt text](l2.png)
+![alt text](images/l2.png)
 This diagram provides a more detailed technical view of the Soroban-based Hedge/Risk marketplace within the Sentinel Protocol. It zooms in on the smart contract architecture and how the various components work together to create the insurance ecosystem.
 
 This provides a more granular diagram demonstrates how the smart contracts, frontend, and external services interact to form the trustless insurance marketplace.
