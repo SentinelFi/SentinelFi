@@ -9,6 +9,7 @@ Presentation #2: https://docs.google.com/presentation/d/e/2PACX-1vTDbMYiE8QylmcV
 - [Design, Figma Mockups](#design)
 - [Roadmap And Deliverables, Time and Budget Estimates, Funding Strategy Beyond SCF](#roadmap)
 - [Success Measurement](#success-measurement)
+- [Team Bio](#team-bio)
 
 ---
 ## Detailed Overview: 
@@ -339,7 +340,7 @@ Once we have our MVP and can launch in mainnet, success will be measured by more
 ### Team Bio
 
 - **Saurav Dhar (Ender):**  
-  Saurav has 8 years of experience in Web2 and over 1 year in Web3 development.  
+  Saurav has 8 years of experience in Web2 and 2 years in Web3 development, and he has been active in the DeFi ecosystem as a user/investor for the last 4 years.  
   - **Web2 Expertise:** Ruby on Rails, Python, TypeScript, React, Rust.  
   - **Web3 Expertise:** Solidity, Move, and Applied ZK (Zero-Knowledge).  
   Saurav has been pivotal in bridging traditional development skills with cutting-edge decentralized technologies, bringing valuable insights from both ecosystems to the Sentinel project.  
